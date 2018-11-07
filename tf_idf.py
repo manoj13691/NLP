@@ -110,13 +110,8 @@ print("\n")
 
 print("Building TF-IDF now")
 tf_idf = tf_idf(tf_list, idf)
-names = tf_idf.pop(0)
+#names = tf_idf.pop(0)
 print(tf_idf)
-import pandas as pd
-data =pd.DataFrame(dict(zip(names, tf_idf)))
-print(dict(zip(names, tf_idf)))
-#print(data)
-
 
 
 
