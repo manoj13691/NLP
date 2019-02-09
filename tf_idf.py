@@ -69,7 +69,7 @@ def idf(all_words_set, docs):
 			if word in doc_wise_word_count[i]:
 				count +=1
 
-		idf_value = math.log(N/count,10) 
+		idf_value = math.log(N/count,10) + 1.0
 		idf.append(idf_value)
 
 	idf = [all_words_list] + [idf]
